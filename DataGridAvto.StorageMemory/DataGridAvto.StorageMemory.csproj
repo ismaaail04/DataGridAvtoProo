@@ -1,0 +1,29 @@
+﻿<Project Sdk=" Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<BuildPackage>true</BuildPackage>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+		<PackageId>PKGH.KholIsm.DataGridAvto.StorageMemory</PackageId>
+		<Title>Avto Reestre Memory Storage</Title>
+		<Version>1.0.1</Version>
+		<Authors>Ismail</Authors>
+		<Company>PKGH</Company>
+		<Description>package for studying.</Description>
+		<Product>avtoReestre</Product>
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DataGridAvto.Contracts\DataGridAvto.Contracts.csproj" >
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>DataGridAvto.Contracts.dll</IncludeAssets>
+		</ProjectReference>
+	</ItemGroup>
+
+
+	<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+		<ItemGroup>
+			<BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+		</ItemGroup>
+	</Target>
+</Project>
