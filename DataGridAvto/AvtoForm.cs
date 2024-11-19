@@ -34,6 +34,7 @@ namespace DataGridAvto
                 : new ValidAvto
                 {
                     Id = avto.Id,
+                    Mark = Mark.Hunday_Creta,
                     Number = avto.Number,
                     Probeg = avto.Probeg,
                     AvgFuelCons = avto.AvgFuelCons,

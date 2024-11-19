@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.правкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,12 +42,12 @@
             this.FuelReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RentalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripAdd = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEdit = new System.Windows.Forms.ToolStripButton();
-            this.toolStripDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripAdd = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEdit = new System.Windows.Forms.ToolStripButton();
+            this.toolStripDelete = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -63,7 +62,7 @@
             this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1013, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(858, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -102,7 +101,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1013, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(846, 426);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -171,39 +170,9 @@
             this.toolStripDelete});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(858, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripAdd
-            // 
-            this.toolStripAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripAdd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAdd.Image")));
-            this.toolStripAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripAdd.Name = "toolStripAdd";
-            this.toolStripAdd.Size = new System.Drawing.Size(23, 22);
-            this.toolStripAdd.Text = "toolStripButton1";
-            this.toolStripAdd.Click += new System.EventHandler(this.toolStripAdd_Click);
-            // 
-            // toolStripEdit
-            // 
-            this.toolStripEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripEdit.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEdit.Image")));
-            this.toolStripEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripEdit.Name = "toolStripEdit";
-            this.toolStripEdit.Size = new System.Drawing.Size(23, 22);
-            this.toolStripEdit.Text = "toolStripButton2";
-            this.toolStripEdit.Click += new System.EventHandler(this.toolStripEdit_Click);
-            // 
-            // toolStripDelete
-            // 
-            this.toolStripDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDelete.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDelete.Image")));
-            this.toolStripDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDelete.Name = "toolStripDelete";
-            this.toolStripDelete.Size = new System.Drawing.Size(23, 22);
-            this.toolStripDelete.Text = "toolStripButton3";
-            this.toolStripDelete.Click += new System.EventHandler(this.toolStripDelete_Click);
             // 
             // toolStrip2
             // 
@@ -213,7 +182,7 @@
             this.toolStripLabel2});
             this.toolStrip2.Location = new System.Drawing.Point(0, 425);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(1013, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(858, 25);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -229,11 +198,41 @@
             this.toolStripLabel2.Size = new System.Drawing.Size(86, 22);
             this.toolStripLabel2.Text = "toolStripLabel2";
             // 
+            // toolStripAdd
+            // 
+            this.toolStripAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripAdd.Image = global::DataGridAvto.Properties.Resources.add;
+            this.toolStripAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAdd.Name = "toolStripAdd";
+            this.toolStripAdd.Size = new System.Drawing.Size(23, 22);
+            this.toolStripAdd.Text = "toolStripButton1";
+            this.toolStripAdd.Click += new System.EventHandler(this.toolStripAdd_Click);
+            // 
+            // toolStripEdit
+            // 
+            this.toolStripEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripEdit.Image = global::DataGridAvto.Properties.Resources.edit;
+            this.toolStripEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripEdit.Name = "toolStripEdit";
+            this.toolStripEdit.Size = new System.Drawing.Size(23, 22);
+            this.toolStripEdit.Text = "toolStripButton2";
+            this.toolStripEdit.Click += new System.EventHandler(this.toolStripEdit_Click);
+            // 
+            // toolStripDelete
+            // 
+            this.toolStripDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDelete.Image = global::DataGridAvto.Properties.Resources.delete;
+            this.toolStripDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDelete.Name = "toolStripDelete";
+            this.toolStripDelete.Size = new System.Drawing.Size(23, 22);
+            this.toolStripDelete.Text = "toolStripButton3";
+            this.toolStripDelete.Click += new System.EventHandler(this.toolStripDelete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 450);
+            this.ClientSize = new System.Drawing.Size(858, 450);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);
